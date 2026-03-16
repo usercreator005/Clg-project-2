@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coding Challenge</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💻 Coding Challenge Platform</h1>
+
+<div class="controls">
+
+<select id="difficulty">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+
+<select id="language">
+<option value="javascript">JavaScript</option>
+<option value="python">Python</option>
+<option value="cpp">C++</option>
+<option value="java">Java</option>
+</select>
+
+<button onclick="getQuestion()">Random Question</button>
+
+</div>
+
+
+<div class="question-box">
+
+<h2>Question</h2>
+
+<p id="question">
+Click Random Question to start challenge
+</p>
+
+</div>
+
+
+<div class="editor-box">
+
+<h2>Code Editor</h2>
+
+<textarea id="editor" placeholder="Write your code here..."></textarea>
+
+<button onclick="runCode()">Run Code</button>
+
+</div>
+
+
+<div class="solution-box">
+
+<button onclick="showSolution()">Show Solution</button>
+
+<pre id="solution"></pre>
+
+</div>
+
+
+<div class="output-box">
+
+<h3>Output</h3>
+
+<pre id="output"></pre>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
