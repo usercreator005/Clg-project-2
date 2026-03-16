@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width">
 
-<title>Coding Challenge</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coding Challenge Platform</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,6 +19,8 @@
 
 <h1>💻 Coding Challenge Platform</h1>
 
+<div class="controls">
+
 <select id="difficulty">
 
 <option value="easy">Easy</option>
@@ -26,21 +31,23 @@
 
 <button onclick="getQuestion()">Generate Question</button>
 
+</div>
 
 <div class="questionBox">
 
 <h3 id="question">
-
 Click Generate Question
-
 </h3>
 
 </div>
 
+<div class="solutionArea">
 
 <button onclick="showSolution()">Show Solution</button>
 
 <pre id="solution"></pre>
+
+</div>
 
 </div>
 
