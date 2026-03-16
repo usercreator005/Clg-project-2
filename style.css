@@ -1,4 +1,11 @@
+*{
+box-sizing:border-box;
+}
+
 body{
+
+margin:0;
+padding:20px;
 
 background:#0d1117;
 color:white;
@@ -10,44 +17,129 @@ justify-content:center;
 
 }
 
+/* Container */
+
 .container{
 
-width:700px;
+width:100%;
+max-width:700px;
+
 margin-top:40px;
 
 }
 
-select{
+/* Heading */
 
-padding:10px;
-margin-right:10px;
+h1{
+
+text-align:center;
 
 }
 
-button{
+/* Controls */
+
+.controls{
+
+display:flex;
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+/* Select */
+
+select{
 
 padding:10px;
+font-size:16px;
+
+}
+
+/* Button */
+
+button{
+
+padding:10px 15px;
+
 background:#238636;
 color:white;
 
 border:none;
 cursor:pointer;
 
+font-size:16px;
+
 }
+
+button:hover{
+
+background:#2ea043;
+
+}
+
+/* Question Box */
 
 .questionBox{
 
 margin-top:20px;
 
 background:#161b22;
+
 padding:20px;
 
+border-radius:8px;
+
 }
+
+/* Solution */
 
 pre{
 
 background:black;
+
 padding:15px;
+
 margin-top:10px;
+
+border-radius:6px;
+
+overflow-x:auto;
+
+}
+
+/* 📱 Mobile Responsive */
+
+@media (max-width:600px){
+
+body{
+padding:10px;
+}
+
+.controls{
+flex-direction:column;
+}
+
+select,button{
+width:100%;
+}
+
+.container{
+margin-top:20px;
+}
+
+h1{
+font-size:20px;
+}
+
+.questionBox{
+padding:15px;
+}
+
+pre{
+font-size:14px;
+}
 
 }
